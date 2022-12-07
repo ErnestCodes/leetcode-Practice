@@ -1,3 +1,4 @@
+# if char = "." run search for remaining portion of word on all of curr nodes children;
 class TrieNode:
     def __init__(self):
         self.children = {} # a : TrieNode

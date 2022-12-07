@@ -1,3 +1,6 @@
+# trick: I though use trie to store the grid, reverse thinking, instead store dictionary words, dfs on each cell, 
+# check if cell's char exists as child of root node in trie, if it does, update currNode, and check neighbors, 
+# a word could exist multiple times in grid, so don’t add duplicates;
 class TrieNode:
     def __init__(self):
         self.children = {}
