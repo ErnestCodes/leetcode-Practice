@@ -1,3 +1,6 @@
+# recursive: if first chars are equal find lcs of remaining of each, 
+# else max of: lcs of first and remain of 2nd and lcs of 2nd remain of first, 
+# cache result; nested forloop to compute the cache without recursion;
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         dp = [[0 for j in range(len(text2) + 1)] for i in range(len(text1) + 1)]

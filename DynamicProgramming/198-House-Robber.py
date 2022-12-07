@@ -1,3 +1,5 @@
+# for each num, get max of prev subarr, or num + prev subarr not including last element,
+#  store results of prev, and prev not including last element
 class Solution:
     def rob(self, nums: List[int]) -> int:
         rob1, rob2 = 0, 0

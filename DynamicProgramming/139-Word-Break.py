@@ -1,3 +1,5 @@
+# for each prefix, if prefix is in dict and wordbreak(remaining str)=True, then return True, 
+# cache result of wordbreak;
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         

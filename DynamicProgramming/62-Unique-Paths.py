@@ -1,3 +1,5 @@
+# work backwards from solution, store paths for each position in grid,
+# to further optimize, we don’t store whole grid, only need to store prev row;
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         row = [1] * n

@@ -1,3 +1,4 @@
+# subarr = arr without first & last, get max of subarr, then pick which of first/last should be added to it
 class Solution:
     def rob(self, nums: List[int]) -> int:
         return max(nums[0], self.helper(nums[1:]), self.helper(nums[:-1]))
